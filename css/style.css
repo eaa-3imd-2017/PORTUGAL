@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face{
+    font-family : "BatonTurbo";
+    src:url('../font/batonturbo/btbook.woff') format('woff');
+	font-weight: normal;
+}
+
+@font-face{
+    font-family : "BatonTurboBold";
+    src:url('../font/batonturbo/btbold.woff') format('woff');
+	font-weight: bold;
+}
+
+body {
+	font-family : "BatonTurbo";
+	padding: 0;
+	margin: 0;
+	background-color: #F5F0E1;
+	}
+
+/* Transitions de pages*/
+
+.niveau {
+	display:none;
+	}
+	
+.niveauactif {
+	display:block;
+	}
+
+
+/*europe*/
+
+.espagnehover {
+    display: none;
+}
+
+.espagne:hover + .espagnehover {
+	display:block;
+	}
