@@ -11,21 +11,42 @@
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link href="css/europe.css" rel="stylesheet" type="text/css">
 
-<script type="text/javascript" src="js/bootstrap.js"></script>
-<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-
 </head>
 
 <body>
-
-<nav class="visible-xs visible-sm">
-<ul id="menu-mobile">
+ <nav class="navbar navbar-default hidden-md hidden-lg">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Accueil</a></li>
+        <li><a href="expo.html">Nos expos voyagent</a></li>
+        <li><a href="bref.html">En bref</a></li>
+		<li><a href="fil.html">Le fil rouge</a></li>
+        <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+      
+		<a class="iconmobile" data-toggle="collapse" href="#menu"></a>
+    	<div class="collapse menu" id="menu">
+            <ul id="menu-mobile">
 <li><a href="#europe">Disaspora portugaise en Europe</a></li>
 <li><a href="#suisse">Disaspora portugaise en Suisse</a></li>
 <li><a href="#romandie">Disaspora portugaise en Suisse Romande</a></li>
 <li><a href="#allemanie">Disaspora portugaise en Suisse Allémanique</a></li>
-</ul>
-</nav>
+</ul>  
+    	</div>
+
+<object id="navigation" type="image/svg+xml" data="img/nav.svg" class="visible-md visible-lg"></object> 
 
 <nav class="visible-md visible-lg">
 <ul id="menu-desktop">
@@ -36,21 +57,34 @@
 </ul>
 </nav>
 
-<div id="europe" class="niveau niveauactif">
+<header></header>
+
+<main class="container-fluid">
+<section id="europe" class="niveau niveauactif">
 
 <div class="container">
 <div class="col-xs-12 col-md-4">
-<h1>Diaspora portugaise</h1>
-<h2>en europe</h2>
+<div class="titre">
+<h1>Diaspora</h1>
+<h2>portugaise en europe</h2>
+</div>
 <p>Classement de la population portugaise en Europe</p>
-<ul>
+<ul class="classement">
 <li>1. Espagne</li>
 <li>2. Allemagne</li>
 <li>3. Angleterre</li>
 <li>4. Suisse</li>
 <li>5. Luxembourg</li>
 </ul>
-<div class="espagnehover">blabalba</div>
+
+<div class="francehover">france</div>
+<div class="espagnehover">espagne</div>
+<div class="ukhover">uk</div>
+<div class="allemagnehover">allemagne</div>
+<div class="luxembourghover">luxembourg</div>
+<div class="italiehover">italie</div>
+<div class="portugalhover">portugal</div>
+
 
 </div>
 <div class="col-xs-12 col-md-8">
@@ -58,14 +92,14 @@
 </div>
 </div>
 
-</div>
+</section>
 
 
-<div id="suisse" class="niveau">
+<section id="suisse" class="niveau">
 
 <div class="container">
 <div class="col-xs-12 col-md-4">
-<h1>Diaspora portugaise</h1>
+<h1>Diaspora</h1>
 <h2>en Suisse</h2>
 <p></p>
 </div>
@@ -74,10 +108,10 @@ svglol
 </div>
 </div>
 
-</div>
+</section>
 
 
-<div id="romandie" class="niveau">
+<section id="romandie" class="niveau">
 
 <div class="container">
 <div class="col-xs-12 col-md-4">
@@ -90,10 +124,10 @@ svglol
 </div>
 </div>
 
-</div>
+</section>
 
 
-<div id="allemanie" class="niveau">
+<section id="allemanie" class="niveau">
 
 <div class="container">
 <div class="col-xs-12 col-md-4">
@@ -106,8 +140,14 @@ svglol
 </div>
 </div>
 
-</div>
+</section>
+</main>
+<footer></footer>
 
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
 <script type="text/javascript" src="js/pagetransition.js"></script>
+<script type="text/javascript" src="js/svg-animate.js"></script>
+
 </body>
 </html>

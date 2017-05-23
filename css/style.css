@@ -17,7 +17,10 @@ body {
 	font-family : "BatonTurbo";
 	padding: 0;
 	margin: 0;
+	color: #4D4D4D;
+	line-height:1.6em;
 	background-color: #F5F0E1;
+	overflow:hidden;
 	}
 
 /* Transitions de pages*/
@@ -30,13 +33,124 @@ body {
 	display:block;
 	}
 
+/*navigation mobile*/
+
+.iconmobile {
+    position: absolute;
+    top: 20px;    
+    left: 50%;
+    height: 14px;
+    margin-left: -10px;
+}
+
+
+.menu {
+	position:relative;
+	top:0;
+	left:0;
+    display: none; 
+    width: 100%;
+    padding: 30px 10px 50px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+}
+.menu ul {
+    margin-bottom: 0;
+}
+.menu a {
+    color: #333; 
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+.menu a:hover {
+    text-decoration: none;
+    opacity: 1;
+}
+
+/*navigation*/
+
+#navigation {
+	height:100vh;
+	position:absolute;
+	top:0;
+	left:1vw;
+	}
+	
+
+/*titres*/
+
+.titre {
+	width:280px;
+	height: 67px;
+	font-family: "BatonTurboBold";
+	position:relative;
+	text-align:center;
+	padding-top:10px;
+	top:2vh;
+	left:12vw;
+	border: 3px solid #666666;
+	background-color: #FFFFFF;
+	}
+	
+h1 {
+	color:#2C945C;
+	font-size:30px;
+	text-transform:uppercase;
+	letter-spacing:15px;
+	position:relative;
+	left:7px;
+	padding:0;
+	margin:0;
+	}
+	
+h2 {
+	color:#E55324;
+	font-size:12px;
+	text-transform:uppercase;
+	letter-spacing:6px;
+	padding:0;
+	margin:0;
+	}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }
+
+
 
 /*europe*/
+#carteeurope {
+	position:relative;
+	top:6vh;
+	}
 
-.espagnehover {
+#europe p {
+	font-family: "BatonTurboBold";
+	font-size:18px;
+	position:relative;
+	top:6vh;
+	left:12vw;
+	}
+
+.classement {
+	line-height:1.7;
+	position:relative;
+	list-style:none;
+	font-family: "BatonTurboBold";
+	font-size:16px;
+	color:#E55324;
+	left:20vw;
+	top: 6vh;
+	}
+	
+.espagnehover, .francehover, .ukhover, .allemagnehover, .luxembourghover, .italiehover, .portugalhover {
     display: none;
 }
 
-.espagne:hover + .espagnehover {
-	display:block;
-	}
+
