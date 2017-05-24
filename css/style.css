@@ -80,6 +80,7 @@ body {
 
 .navbar-toggle {
 	float:left;
+	margin-top:0px;
 }
 
 #iconnavmobile {
