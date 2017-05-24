@@ -8,14 +8,9 @@
 // afin de le rendre accessible par Javascript
 
 var svgExt = document.getElementById("carteeurope");
-var svgDoc;
 
 // On définit tous les objets SVG qu'on souhaite ensuite manipuler
-var svgEspagne;
-var svgUk;
-var svgAllemagne;
-var svgLuxembourg;
-
+var svgDoc, svgEspagne, svgUk, svgAllemagne, svgLuxembourg;
 
 svgExt.addEventListener("load",function() {
 
