@@ -14,38 +14,26 @@
 </head>
 
 <body>
- <nav class="navbar navbar-default hidden-md hidden-lg">
-        <div class="container">
+<nav class="navbar navbar-default hidden-md hidden-lg">
+       <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-          </div>
+            <img src="img/navmobile.svg" id="iconnavmobile" alt=""/>
+         </button>
+</div>
           <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li><a href="index.html">Accueil</a></li>
-        <li><a href="expo.html">Nos expos voyagent</a></li>
-        <li><a href="bref.html">En bref</a></li>
-		<li><a href="fil.html">Le fil rouge</a></li>
-        <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div><!--/.container-fluid -->
-      </nav>
-      
-		<a class="iconmobile" data-toggle="collapse" href="#menu"></a>
-    	<div class="collapse menu" id="menu">
+           <div id="menu">
             <ul id="menu-mobile">
 <li><a href="#europe">Disaspora portugaise en Europe</a></li>
 <li><a href="#suisse">Disaspora portugaise en Suisse</a></li>
 <li><a href="#romandie">Disaspora portugaise en Suisse Romande</a></li>
 <li><a href="#allemanie">Disaspora portugaise en Suisse Allémanique</a></li>
 </ul>  
-    	</div>
-
+   </div>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+</nav>
+      
 <object id="navigation" type="image/svg+xml" data="img/nav.svg" class="visible-md visible-lg"></object> 
 
 <nav class="visible-md visible-lg">
@@ -77,13 +65,28 @@
 <li>5. Luxembourg</li>
 </ul>
 
-<div class="francehover">france</div>
-<div class="espagnehover">espagne</div>
-<div class="ukhover">uk</div>
-<div class="allemagnehover">allemagne</div>
-<div class="luxembourghover">luxembourg</div>
-<div class="italiehover">italie</div>
-<div class="portugalhover">portugal</div>
+
+<div class="espagnehover">
+<h3>Pourcentage de Portugais en Espagne</h3>
+<img src="img/payshover/es.svg" id="poures" alt=""/>
+<p>7.95%</p>
+</div>
+<div class="ukhover">
+<h3>Pourcentage de Portugais en Angleterre</h3>
+<img src="img/payshover/uk.svg" id="pouruk" alt=""/>
+<p>0.52%</p>
+</div>
+<div class="allemagnehover">
+<h3>Pourcentage de Portugais en Allemagne</h3>
+<img src="img/payshover/de.svg" id="pourde" alt=""/>
+<p>0.39%</p>
+</div>
+<div class="luxembourghover">
+<h3>Pourcentage de Portugais au Luxembourg</h3>
+<img src="img/payshover/lx.svg" id="pourlx" alt=""/>
+<p>31.5%</p>
+</div>
+
 
 
 </div>
@@ -99,12 +102,38 @@
 
 <div class="container">
 <div class="col-xs-12 col-md-4">
+<div class="titre">
 <h1>Diaspora</h1>
-<h2>en Suisse</h2>
-<p></p>
+<h2>portugaise en Suisse</h2>
+</div>
+<div class="infos">
+<h3>Portugais en Suisse</h3>
+<div class="drapeaux hidden-md hidden-lg">
+<div class="fr">
+<h4>Suisse Romande</h4>
+<img src="img/suisse/fr.svg" alt=""/> 
+<p>63%</p>
+</div>
+<div class="de">
+<h4>Suisse Alémanique</h4>
+<img src="img/suisse/de.svg" alt=""/> 
+<p>30%</p>
+</div>
+<div class="it">
+<h4>Suisse Italienne</h4>
+<img src="img/suisse/it.svg" alt=""/> 
+<p>7%</p>
+</div>
+</div>
+</div>
 </div>
 <div class="col-xs-12 col-md-8">
-svglol
+<object id="cartesuisse" type="image/svg+xml" data="img/suisse.svg"></object>
+</div>
+<div class="col-xs-4 hidden-md hidden-lg">
+  <img src="img/suisse/grandecroix.svg" alt=""/> </div>
+<div class="col-xs-8 hidden-md hidden-lg" id="troistrois">
+<p>3.3% de la population suisse est <span>portugaise</span></p>
 </div>
 </div>
 
@@ -115,13 +144,22 @@ svglol
 
 <div class="container">
 <div class="col-xs-12 col-md-4">
-<h1>Diaspora portugaise</h1>
-<h2>en Suisse Romande</h2>
-<p></p>
+<div class="titre">
+<h1>Diaspora</h1>
+<h2>portugaise en Suisse Romande</h2>
+</div>
+<div class="baton">
+<div class="batonvd"></div>
+<div class="batonju"></div>
+</div>
+
 </div>
 <div class="col-xs-12 col-md-8">
-svglol
+<object id="carteromandie" type="image/svg+xml" data="img/romandie.svg"></object>
 </div>
+<div class="col-xs-12 hidden-md hidden-lg">
+<h3>Habitants portugais par ville</h3>
+<img src="img/romandie/camembert.svg" alt=""/> </div>
 </div>
 
 </section>
@@ -131,12 +169,15 @@ svglol
 
 <div class="container">
 <div class="col-xs-12 col-md-4">
-<h1>Diaspora portugaise</h1>
-<h2>en Suisse Allemanique</h2>
-<p></p>
+<div class="titre">
+<h1>Diaspora</h1>
+<h2>portugaise en Suisse Alémanique</h2>
+</div>
+<p>texte</p>
+
 </div>
 <div class="col-xs-12 col-md-8">
-svglol
+<object id="carteallemande" type="image/svg+xml" data="img/allemande.svg"></object>
 </div>
 </div>
 
@@ -148,6 +189,13 @@ svglol
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <script type="text/javascript" src="js/pagetransition.js"></script>
 <script type="text/javascript" src="js/svg-animate.js"></script>
+
+<script>
+$('#navbar a').on('click', function(){
+    $('.btn-navbar').click(); //bootstrap 2.x
+    $('.navbar-toggle').click() //bootstrap 3.x by Richard
+});
+</script>
 
 </body>
 </html>

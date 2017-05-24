@@ -20,8 +20,27 @@ body {
 	color: #4D4D4D;
 	line-height:1.6em;
 	background-color: #F5F0E1;
-	overflow:hidden;
+	overflow-x:hidden;
 	}
+	
+a, a:hover, a:active, a:visited {
+	text-decoration:none;
+	color: #000000;
+	}	
+	
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+body {
+	background-color:#F51B1E;
+	overflow:hidden;}
+ }
+
+/*container*/
+.container-fluid {
+	position:relative;
+	top: -145px;
+	}
+
 
 /* Transitions de pages*/
 
@@ -35,15 +54,42 @@ body {
 
 /*navigation mobile*/
 
-.iconmobile {
-    position: absolute;
-    top: 20px;    
-    left: 50%;
-    height: 14px;
-    margin-left: -10px;
+/*reset*/
+.navbar-default {
+	background-color:transparent;
+	border-color:transparent;
+	}
+	
+.navbar-default .navbar-toggle {
+	border-color:transparent;
+	}
+	
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color:transparent;
 }
 
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	width:85%;
+	float:right;
+	border-color:transparent;
+	background-color:#E5DFCF;
+	position:relative;
+	top:-150px;
+	padding-top:30px;
+}
 
+.navbar-toggle {
+	float:left;
+}
+
+#iconnavmobile {
+	width:65px;
+	}
+	
+#menu-mobile li {
+	list-style:none;}
+
+/*menu?*/
 .menu {
 	position:relative;
 	top:0;
@@ -112,6 +158,14 @@ h2 {
 	padding:0;
 	margin:0;
 	}
+	
+h3 {
+	text-align:center;
+	color:#4d4d4d;
+	font-size:20px;
+	letter-spacing:1px;
+	font-family: "BatonTurboBold";
+	}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: @screen-sm-min) { ... }
@@ -127,7 +181,7 @@ h2 {
 /*europe*/
 #carteeurope {
 	position:relative;
-	top:6vh;
+	top:15vh;
 	}
 
 #europe p {
@@ -143,14 +197,109 @@ h2 {
 	position:relative;
 	list-style:none;
 	font-family: "BatonTurboBold";
-	font-size:16px;
+	font-size:18px;
 	color:#E55324;
 	left:20vw;
-	top: 6vh;
+	top: 8vh;
 	}
 	
-.espagnehover, .francehover, .ukhover, .allemagnehover, .luxembourghover, .italiehover, .portugalhover {
-    display: none;
+.espagnehover, .ukhover, .allemagnehover, .luxembourghover {
+	width: 80%;
+	text-align:center;
+    background-color:#F5F0E1;
+	display: none;
+	position:absolute;
+	top:12vh;
+	left:15vw;
 }
 
+.espagnehover p, .allemagnehover p, .luxembourghover p, .ukhover p {
+	letter-spacing:1px;
+	color:red;
+	}
+
+#pouruk, #poures, #pourde, #pourlx {
+	width:200px;
+	}
+
+/*suisse*/
+
+#cartesuisse {
+	margin-top:30px;
+	}
+
+.infos {
+	width:95vw;
+	margin:auto;
+	position:relative;
+	top:5vh;
+	}
+
+.fr, .de, .it {
+	width: 25%;
+	margin-right:20px;
+	display:inline-block;
+	}
+
+.drapeaux h4 {
+	font-family: "BatonTurboBold";
+	font-size:15px;
+	}
+
+.drapeaux p {
+	font-family: "BatonTurboBold";
+	margin-top:10px;
+	font-size:15px;
+	}
+	
+	#troistrois {
+		position:relative;
+		vertical-align:middle;
+		font-size:18px;
+		}
+		
+	#troistrois span {
+		color:red;
+		}
+		
+/*romandie*/
+
+.baton {
+	margin-top:50px;
+	position:relative;
+	left:12vw;
+	}
+
+.batonvd {
+    width: 280px;
+    height: 30px;
+	margin-bottom:10px;
+    background-color: #06602C;
+    -webkit-animation-name: grand; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: grand;
+    animation-duration: 2s;
+}
+
+/* Standard syntax */
+@keyframes grand {
+    from {width:0px}
+    to {width:250px}
+}
+
+.batonju {
+    width: 55px;
+    height: 30px;
+    background-color: #8DC6A4;
+    -webkit-animation-name: petit; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: petit;
+    animation-duration: 2s;
+}
+
+/* Standard syntax */
+@keyframes petit {
+    from {width:0px}
+    to {width:55px}
+}
 
