@@ -3,13 +3,13 @@
 
 @font-face{
     font-family : "BatonTurbo";
-    src:url('../font/batonturbo/btbook.woff') format('woff');
+    src:url('https://fonts.cours-web.ch/BatonTurbo/Book.woff') format('woff');
 	font-weight: normal;
 }
 
 @font-face{
     font-family : "BatonTurboBold";
-    src:url('../font/batonturbo/btbold.woff') format('woff');
+    src:url('https://fonts.cours-web.ch/BatonTurbo/Bold.woff') format('woff');
 	font-weight: bold;
 }
 
