@@ -12,6 +12,9 @@ var svgExt = document.getElementById("carteeurope");
 // On définit tous les objets SVG qu'on souhaite ensuite manipuler
 var svgDoc, svgEspagne, svgUk, svgAllemagne, svgLuxembourg;
 
+// test MediaQuery
+var mq = window.matchMedia('(min-width: 700px)');
+
 svgExt.addEventListener("load",function() {
 
   svgDoc = svgExt.contentDocument;
@@ -44,6 +47,8 @@ function svgCountryInfo(){
   // ce qui se passe au hover:
   // on obtient l'ID de l'élément survolé:
 
+  if(mq.matches) {
+
   var CountryID = this.id;
   console.log("svgCountryInfo: "+CountryID);
 
@@ -53,6 +58,8 @@ function svgCountryInfo(){
 
   CountryInfo.style.display="block";
 
+  }
+
 }
 
 function svgCountryHide(){
@@ -60,6 +67,8 @@ function svgCountryHide(){
   // ce qui se passe au hover:
   // on obtient l'ID de l'élément survolé:
   
+  if(mq.matches) {
+
   var CountryID = this.id;
   console.log("svgCountryHide: "+CountryID);
 
@@ -68,6 +77,8 @@ function svgCountryHide(){
   var CountryInfo = document.querySelector( CountryInfoClass );
 
   CountryInfo.style.display="none";
+
+  }
 
 }
 
