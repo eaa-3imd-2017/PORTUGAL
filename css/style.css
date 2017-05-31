@@ -31,7 +31,6 @@ a, a:hover, a:active, a:visited {
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
 body {
-	background-color:#F51B1E;
 	overflow:hidden;}
  }
 
@@ -69,12 +68,12 @@ body {
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-	width:85%;
+	width:90%;
 	float:right;
 	border-color:transparent;
 	background-color:#E5DFCF;
 	position:relative;
-	top:-150px;
+	top:-112px;
 	padding-top:30px;
 }
 
@@ -83,37 +82,37 @@ body {
 	margin-top:0px;
 }
 
+.navbar-header {
+	position:relative;
+	z-index:20;
+	}
+
 #iconnavmobile {
-	width:65px;
+	width:50px;
 	}
 	
-#menu-mobile li {
-	list-style:none;}
-
-/*menu?*/
-.menu {
+#menu-mobile{
 	position:relative;
-	top:0;
-	left:0;
-    display: none; 
-    width: 100%;
-    padding: 30px 10px 50px;
-    margin: 0 auto;
-    text-align: center;
-    background-color: #fff;
-}
-.menu ul {
-    margin-bottom: 0;
-}
-.menu a {
-    color: #333; 
-    text-transform: uppercase;
-    opacity: 0.8;
-}
-.menu a:hover {
-    text-decoration: none;
-    opacity: 1;
-}
+	left:-35px;
+	}	
+	
+#menu-mobile li {
+	font-size:13px;
+	width:120%;
+	margin-bottom:20px;
+	padding:8px;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	border: 2px solid #666666;
+	list-style:none;
+	background-color:#FFFFFF;
+	}
+#menu-mobile span {
+	color:#E55324;
+	}
+	
+	
+/*menu desktop*/
 
 /*navigation*/
 
@@ -123,26 +122,35 @@ body {
 	top:0;
 	left:1vw;
 	}
+
+#menu-desktop {
+	position:relative;
+	z-index:12;
+	}	
+	
+#menu-desktop li {
+	list-style:none;
+}
 	
 
 /*titres*/
 
 .titre {
-	width:280px;
-	height: 67px;
+	width: 239px;
+    height: 56px;
 	font-family: "BatonTurboBold";
 	position:relative;
 	text-align:center;
 	padding-top:10px;
-	top:2vh;
-	left:12vw;
-	border: 3px solid #666666;
+	top:36px;
+	left:6vw;
+	border: 2px solid #666666;
 	background-color: #FFFFFF;
 	}
 	
 h1 {
 	color:#2C945C;
-	font-size:30px;
+	font-size:22px;
 	text-transform:uppercase;
 	letter-spacing:15px;
 	position:relative;
@@ -153,44 +161,71 @@ h1 {
 	
 h2 {
 	color:#E55324;
-	font-size:12px;
+	font-size:10px;
 	text-transform:uppercase;
-	letter-spacing:6px;
+	letter-spacing:5px;
 	padding:0;
 	margin:0;
 	}
 	
 h3 {
-	text-align:center;
+	font-size: 14px;
+    position: relative;
+    left: 10px;
+    top: 10px;
 	color:#4d4d4d;
-	font-size:20px;
 	letter-spacing:1px;
 	font-family: "BatonTurboBold";
 	}
 
-/* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) { ... }
-
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) { ... }
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) { ... }
-
-
+@media (min-width: 992px) { 
+.titre {
+	width:400px;
+	height: 85px;
+	position:fixed;
+	z-index:2;
+	top:28px;
+	left:140px;
+	text-align:center;
+	padding-top:10px;
+	}
+	
+.fond {
+	width:400px;
+	height: 85px;
+	position:fixed;
+	z-index:1;
+	top:38px;
+	left:150px;
+	background-color:#E5DCC6;
+	}
+	
+h1 {
+	font-size:40px;
+	letter-spacing:25px;
+	position:relative;
+	left:7px;
+	}
+	
+h2 {
+	font-size:18px;
+	letter-spacing:8px;
+	}
+	}
 
 /*europe*/
 #carteeurope {
 	position:relative;
-	top:15vh;
+	top:60px;
 	}
 
 #europe p {
 	font-family: "BatonTurboBold";
-	font-size:18px;
-	position:relative;
-	top:6vh;
-	left:12vw;
+	font-size: 16px;
+    position: relative;
+    top: 60px;
+    left: 20px;
 	}
 
 .classement {
@@ -198,10 +233,10 @@ h3 {
 	position:relative;
 	list-style:none;
 	font-family: "BatonTurboBold";
-	font-size:18px;
+	font-size:16px;
 	color:#E55324;
-	left:20vw;
-	top: 8vh;
+	left:30px;
+	top: 70px;
 	}
 	
 .espagnehover, .ukhover, .allemagnehover, .luxembourghover {
@@ -223,17 +258,47 @@ h3 {
 	width:200px;
 	}
 
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+#europe p {
+	width:330px;
+	line-height:1.4em;
+	font-size:25px;
+	position:fixed;
+	top:180px;
+	left:150px;
+	}
+	
+.classement {
+	position:fixed;
+	font-size:25px;
+	line-height:2em;
+	left:180px;
+	top:300px;
+	}
+	
+#carteeurope{
+	width:610px;
+	}
+}
+
+
 /*suisse*/
 
 #cartesuisse {
 	margin-top:30px;
 	}
 
-.infos {
+#suisse .infos {
 	width:95vw;
 	margin:auto;
 	position:relative;
 	top:5vh;
+	}
+	
+#suisse .infos h3 {
+	position:relative;
+	left:60px;
 	}
 
 .fr, .de, .it {
@@ -241,10 +306,16 @@ h3 {
 	margin-right:20px;
 	display:inline-block;
 	}
+	
+.drapeaux {
+	position:relative;
+	top:10px;
+	left:-10px;
+	}
 
 .drapeaux h4 {
 	font-family: "BatonTurboBold";
-	font-size:15px;
+	font-size:12px;
 	}
 
 .drapeaux p {
@@ -255,47 +326,100 @@ h3 {
 	
 	#troistrois {
 		position:relative;
-		vertical-align:middle;
-		font-size:18px;
+		top:3vh;
+		font-size:13px;
 		}
 		
 	#troistrois span {
 		color:red;
 		}
 		
+	@media (min-width: 992px) {
+		#cartesuisse{
+			position:relative;
+			top:150px;
+			left:60px;
+			}
+			
+		#troistrois {
+			position:fixed;
+			top: 190px;
+    		left: 130px;
+			}
+			
+		#suisse p {
+			font-size:25px;
+			line-height:1.4;
+			}
+			
+		#croixpetites{
+			width: 430px;
+			}
+		}	
+		
 /*romandie*/
+#carteromandie {
+	width: 320px;
+    position: relative;
+    top: 30px;
+    left: -50px;
+	}
+
+#romandie #camembert {
+	position:relative;
+	left: -35px;
+    top: 60px;
+    width: 310px;
+	}
+
+#romandie h2 {
+	letter-spacing:2px;
+	}
+
+#romandie h3 {
+	top:40px;
+	}
 
 .baton {
 	margin-top:50px;
 	position:relative;
-	left:12vw;
+	left: 20px;
+    top: 10px;
+	}
+	
+.baton .trait {
+	width: 2px;
+    height: 80px;
+    background-color: #666666;
+    position: absolute;
+    top: -9px;
 	}
 
 .batonvd {
-    width: 280px;
-    height: 30px;
+    width: 220px;
+    height: 25px;
 	margin-bottom:10px;
     background-color: #06602C;
     -webkit-animation-name: grand; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
     animation-name: grand;
-    animation-duration: 2s;
+    animation-duration: 3s;
 }
 
 /* Standard syntax */
 @keyframes grand {
     from {width:0px}
-    to {width:250px}
+    to {width:220px}
 }
 
 .batonju {
     width: 55px;
-    height: 30px;
+    height: 25px;
     background-color: #8DC6A4;
     -webkit-animation-name: petit; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
     animation-name: petit;
-    animation-duration: 2s;
+    animation-duration: 3s;
 }
 
 /* Standard syntax */
@@ -304,3 +428,46 @@ h3 {
     to {width:55px}
 }
 
+
+/*allemanie*/
+#carteallemande {
+	margin-top:30px;
+	}
+
+#allemanie h2 {
+	font-size:11px;
+	letter-spacing:2px;
+	}
+
+.batonzu {
+    width: 150px;
+    height: 30px;
+	margin-bottom:10px;
+    background-color: #06602C;
+    -webkit-animation-name: grandun; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: grandun;
+    animation-duration: 2s;
+}
+
+/* Standard syntax */
+@keyframes grandun {
+    from {width:0px}
+    to {width:150px}
+}
+
+.batonnw {
+    width: 25px;
+    height: 30px;
+    background-color: #8DC6A4;
+    -webkit-animation-name: petitun; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: petitun;
+    animation-duration: 2s;
+}
+
+/* Standard syntax */
+@keyframes petitun {
+    from {width:0px}
+    to {width:25px}
+}
