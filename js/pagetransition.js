@@ -7,7 +7,7 @@ $( "#menu-mobile a" ).click(function() {
    var cible = $(this).attr('href');
   
     // 1. masquer le niveau actif
-    $( ".niveauactif" ).hide( 2000, function() {
+    $( ".niveauactif" ).hide( 1000, function() {
   
   // retirer la classe de l'élèment caché
   $(this).removeClass( "niveauactif" );
@@ -15,7 +15,7 @@ $( "#menu-mobile a" ).click(function() {
   // afficher le niveau correspondant à cet attribu
     // 2. afficher le nouveau niveau
 	
-  $(cible).fadeIn( 3000);
+  $(cible).fadeIn( 1000);
   $(cible).addClass( "niveauactif" );
   });
 
@@ -31,7 +31,7 @@ $( "#menu-desktop a" ).click(function() {
    var cible = $(this).attr('href');
   
     // 1. masquer le niveau actif
-    $( ".niveauactif" ).hide( 2000, function() {
+    $( ".niveauactif" ).hide( 1000, function() {
   
   // retirer la classe de l'élèment caché
   $(this).removeClass( "niveauactif" );
@@ -39,7 +39,7 @@ $( "#menu-desktop a" ).click(function() {
   // afficher le niveau correspondant à cet attribu
     // 2. afficher le nouveau niveau
 	
-  $(cible).fadeIn( 3000);
+  $(cible).fadeIn( 1000);
   $(cible).addClass( "niveauactif" );
   });
 
@@ -47,3 +47,28 @@ $( "#menu-desktop a" ).click(function() {
   return false;
 });
 
+
+function pagetransition(){
+ 
+  // récupérer l'élément cliqué
+  // console.log ("this: "+this);
+     
+  var cible = "." + this.id + "next";
+   
+   console.log ("cible: "+cible);
+  
+    // 1. masquer le niveau actif
+    $( ".niveauactif" ).hide( 2000, function() {
+  
+  		// retirer la classe de l'élèment caché
+  		$(this).removeClass( "niveauactif" );
+  
+  // afficher le niveau correspondant à cet attribu
+    // 2. afficher le nouveau niveau
+	
+		  $(cible).fadeIn( 3000);
+		  $(cible).addClass( "niveauactif" );
+		  console.log ("done");
+		  		  
+	});
+}

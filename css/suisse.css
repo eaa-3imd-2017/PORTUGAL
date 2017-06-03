@@ -2,15 +2,15 @@
 /* CSS Document */
 
 .romandie {fill:#C1331B;}
-.italienne {fill:#F49A8C;}
-.allemande {fill:#E8563F;}
+.italienne {fill:#F49A8C;} 
+.alemanie {fill:#E8563F;}
 
 .romandie:hover {
 	fill:#AF2B19;
 	cursor:pointer;
 	}
 	
-.allemande:hover {
+.alemanie:hover {
 	fill:#D84839;
 	cursor:pointer;
 	}	

@@ -10,7 +10,7 @@
 <link href="css/bootstrap.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link href="css/europe.css" rel="stylesheet" type="text/css">
-
+<link href="css/animation.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -18,192 +18,268 @@
        <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <img src="img/navmobile.svg" id="iconnavmobile" alt=""/>
+            <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
          </button>
-</div>
+		</div>
           <div id="navbar" class="navbar-collapse collapse">
            <div id="menu">
             <ul id="menu-mobile">
-<li><a href="#europe">Disaspora portugaise en <span>Europe</span></a></li>
-<li><a href="#suisse">Disaspora portugaise en <span>Suisse</span></a></li>
-<li><a href="#romandie">Disaspora portugaise en <span>Suisse Romande</span></a></li>
-<li><a href="#allemanie">Disaspora portugaise en <span>Suisse Allémanique</span></a></li>
-</ul>  
-   </div>
-          </div><!--/.nav-collapse -->
-        </div><!--/.container-fluid -->
+                <li><a href="#europe">Disaspora portugaise en <span>Europe</span></a></li>
+                <li><a href="#suisse">Disaspora portugaise en <span>Suisse</span></a></li>
+                <li><a href="#romandie">Disaspora portugaise en <span>Suisse Romande</span></a></li>
+                <li><a href="#allemanie">Disaspora portugaise en <span>Suisse Alémanique</span></a></li>
+			</ul>  
+   		</div>
+      </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
 </nav>
       
-<object id="navigation" type="image/svg+xml" data="img/nav.svg" class="visible-md visible-lg"></object> 
-
-<nav class="visible-md visible-lg">
-<ul id="menu-desktop">
-<li><a href="#europe">Disaspora portugaise en Europe</a></li>
-<li><a href="#suisse">Disaspora portugaise en Suisse</a></li>
-<li><a href="#romandie">Disaspora portugaise en Suisse Romande</a></li>
-<li><a href="#allemanie">Disaspora portugaise en Suisse Allémanique</a></li>
-</ul>
+ <nav class="visible-md visible-lg">
+      <div class="mobilenav"> 
+   <ul id="menu-desktop">
+   	<li class="europe"><a href="#europe">Disaspora portugaise en <span>Europe</span></a></li>
+    <li class="suisse"><a href="#suisse">Disaspora portugaise en <span>Suisse</span></a></li>
+    <li class="romandie"><a href="#romandie">Disaspora portugaise en <span>Suisse Romande</span></a></li>
+    <li class="alemanie"><a href="#allemanie">Disaspora portugaise en <span>Suisse Alémanique</span></a></li>
+    </ul> 
+</div>
+<a href="javascript:void(0)" class="icon">
+<div class="hamburger">
+  <div class="menui top-menu"></div>
+  <div class="menui mid-menu"></div>
+  <div class="menui bottom-menu"></div>
+</div>
+</a>
 </nav>
 
 <header></header>
 
 <main class="container-fluid">
 <section id="europe" class="niveau niveauactif">
-
 <div class="container">
-<div class="col-xs-12 col-md-4">
-<div class="titre">
-<h1>Diaspora</h1>
-<h2>portugaise en europe</h2>
+	<div class="col-xs-12 col-md-4">
+		<div class="titre">
+        <h1>Diaspora</h1>
+        <h2>portugaise en europe</h2>
+		</div>
+		<div class="fond"></div>
+        <p>Classement de la population portugaise en Europe</p>
+        <ul class="classement">
+        <li>1. Espagne</li>
+        <li>2. Allemagne</li>
+        <li>3. Angleterre</li>
+        <li>4. Suisse</li>
+        <li>5. Luxembourg</li>
+        </ul>
+            <div class="espagnehover">
+                <h3>Pourcentage de Portugais en Espagne</h3>
+                <img src="img/payshover/es.svg" id="poures" alt=""/>
+                <p>7.95%</p>
+            </div>
+    <div class="ukhover">
+          <h3>Pourcentage de Portugais en Angleterre</h3>
+          <img src="img/payshover/uk.svg" id="pouruk" alt=""/>
+          <p>0.52%</p>
+        </div>
+        <div class="allemagnehover">
+                <h3>Pourcentage de Portugais en Allemagne</h3>
+                <img src="img/payshover/de.svg" id="pourde" alt=""/>
+                <p>0.39%</p>
+        </div>
+        <div class="luxembourghover">
+              <h3>Pourcentage de Portugais au Luxembourg</h3>
+              <img src="img/payshover/lx.svg" id="pourlx" alt=""/>
+              <p>31.5%</p>
+        </div>
+	</div>     
+    <div class="col-xs-12 col-md-8">
+        <object id="carteeurope" type="image/svg+xml" data="img/europe.svg"></object> 
+    </div>
 </div>
-<div class="fond"></div>
-<p>Classement de la population portugaise en Europe</p>
-<ul class="classement">
-<li>1. Espagne</li>
-<li>2. Allemagne</li>
-<li>3. Angleterre</li>
-<li>4. Suisse</li>
-<li>5. Luxembourg</li>
-</ul>
-
-
-<div class="espagnehover">
-<h3>Pourcentage de Portugais en Espagne</h3>
-<img src="img/payshover/es.svg" id="poures" alt=""/>
-<p>7.95%</p>
-</div>
-<div class="ukhover">
-<h3>Pourcentage de Portugais en Angleterre</h3>
-<img src="img/payshover/uk.svg" id="pouruk" alt=""/>
-<p>0.52%</p>
-</div>
-<div class="allemagnehover">
-<h3>Pourcentage de Portugais en Allemagne</h3>
-<img src="img/payshover/de.svg" id="pourde" alt=""/>
-<p>0.39%</p>
-</div>
-<div class="luxembourghover">
-<h3>Pourcentage de Portugais au Luxembourg</h3>
-<img src="img/payshover/lx.svg" id="pourlx" alt=""/>
-<p>31.5%</p>
-</div>
-
-
-
-</div>
-<div class="col-xs-12 col-md-8">
-<object id="carteeurope" type="image/svg+xml" data="img/europe.svg"></object> 
-</div>
-</div>
-
 </section>
 
 
-<section id="suisse" class="niveau">
-
-<div class="container">
-<div class="col-xs-12 col-md-4">
-<div class="titre">
-<h1>Diaspora</h1>
-<h2>portugaise en Suisse</h2>
-</div>
-<div class="fond"></div>
-<div class="infos">
-<h3 class="hidden-md hidden-lg">Portugais en Suisse</h3>
-<div class="drapeaux hidden-md hidden-lg">
-<div class="fr">
-<h4>Suisse Romande</h4>
-<img src="img/suisse/fr.svg" alt=""/> 
-<p>63%</p>
-</div>
-<div class="de">
-<h4>Suisse Alémanique</h4>
-<img src="img/suisse/de.svg" alt=""/> 
-<p>30%</p>
-</div>
-<div class="it">
-<h4>Suisse Italienne</h4>
-<img src="img/suisse/it.svg" alt=""/> 
-<p>7%</p>
-</div>
-</div>
-</div>
-</div>
-<div class="col-xs-12 col-md-8">
-<object id="cartesuisse" type="image/svg+xml" data="img/suisse.svg"></object>
-</div>
-<div class="col-xs-4 hidden-md hidden-lg">
-  <img src="img/suisse/grandecroix.svg" alt=""/> </div>
-<div class="col-xs-8 col-md-4" id="troistrois">
-<p>3.3% de la population suisse est <span>portugaise</span></p>
-<img src="img/suisse/croixpetites.svg" id="croixpetites" class="hidden-xs hidden-sm" alt=""/> </div>
-</div>
-
+<section id="suisse" class="niveau suissenext">
+	<div class="container">
+		<div class="col-xs-12 col-md-4">
+            <div class="titre">
+            <h1>Diaspora</h1>
+            <h2>portugaise en Suisse</h2>
+            </div>
+    		<div class="fond"></div>
+            <div class="infos">
+            <h3 class="hidden-md hidden-lg">Portugais en Suisse</h3>
+            <div class="drapeaux hidden-md hidden-lg">
+            <div class="fr">
+            <h4>Suisse Romande</h4>
+            <img src="img/suisse/fr.svg" id="dpfr" alt=""/> 
+            <p>63%</p>
+            </div>
+            <div class="de">
+            <h4>Suisse Alémanique</h4>
+            <img src="img/suisse/de.svg" id="dpde" alt=""/> 
+            <p>30%</p>
+            </div>
+            <div class="it">
+            <h4>Suisse Italienne</h4>
+            <img src="img/suisse/it.svg" id="dpit" alt=""/> 
+            <p>7%</p>
+            </div>
+            </div>
+            </div>
+		</div>
+        <div class="col-xs-12 col-md-8">
+            <div class="cartouche romandiehover hidden-xs hidden-sm">
+            <div class="arrow-down"></div>
+            63%</div>
+            <div class="cartouche italiennehover hidden-xs hidden-sm">
+            <div class="arrow-down"></div>
+            7%</div>
+            <div class="cartouche alemaniehover hidden-xs hidden-sm">
+            <div class="arrow-down"></div>
+            30%</div>
+            <object id="cartesuisse" type="image/svg+xml" data="img/suisse.svg"></object>
+        </div>
+        <div class="col-xs-4 hidden-md hidden-lg">
+        	<img src="img/suisse/grandecroix.svg" alt=""/> 
+        </div>
+        <div class="col-xs-8 col-md-4" id="troistrois">
+            <p>3.3% de la population suisse est <span>portugaise</span></p>
+            <img src="img/suisse/croixpetites.svg" id="croixpetites" class="hidden-xs hidden-sm" alt=""/> 
+        </div>
+	</div>
 </section>
 
 
-<section id="romandie" class="niveau">
-
-<div class="container">
-<div class="col-xs-12 col-md-4">
-<div class="titre">
-<h1>Diaspora</h1>
-<h2>portugaise en Suisse Romande</h2>
-</div>
-<div class="baton">
-<div class="trait"></div>
-<div class="batonvd"></div>
-<div class="batonju"></div>
-</div>
-<div class="infos hidden-xs hidden-sm">En Suisse Romande, le canton avec la plus grande population portugaise est Vaud avec 59’538 habitants. A contrario, c’est le canton du Jura qui a le moins d’habitants portugais avec seulement 1’800 personnes.</div>
-
-</div>
-<div class="col-xs-12 col-md-8">
-<object id="carteromandie" type="image/svg+xml" data="img/romandie.svg"></object>
-</div>
-<div class="col-xs-12 hidden-md hidden-lg">
-<h3>Habitants portugais par ville</h3>
-<img src="img/romandie/camembert.svg" id="camembert" alt=""/> </div>
-</div>
-
+<section id="romandie" class="niveau romandienext">
+    <div class="container">
+        <div class="col-xs-12 col-md-4">
+            <div class="titre">
+            <h1>Diaspora</h1>
+            <h2>portugaise en Suisse Romande</h2>
+            </div>
+            <div class="fond"></div>
+            <div class="cta hidden-md hidden-lg"></div>
+            <div class="infos">
+            <h3>Habitants Portugais par canton</h3>
+            <div class="baton">
+            <div class="trait"></div>
+            <div class="batonvd"></div>
+            <div class="batonju"></div>
+            </div>
+            <div class="chiffres">
+            <ul>
+            <li class="vd">+ Vaud : 59'538</li>
+            <li class="ju">- Jura : 1'800</li>
+            </ul>
+            </div>
+            <div class="texte hidden-xs hidden-sm">En Suisse Romande, le canton avec la plus grande population portugaise est Vaud avec <span class="grand">59’538</span> habitants. A contrario, c’est le canton du Jura qui a le moins d’habitants portugais avec seulement <span class="petit">1’800</span> personnes.</div>
+            </div>
+        </div>
+        <div class="villes">
+         <div class="sionhover">Sion: lol</div>
+         <div class="cdfhover">La Chaux-de-Fonds: lol</div>
+         <div class="gehover">Genève: lol</div>
+         <div class="lausannehover">Lausanne: lol</div>
+        </div>
+        <div class="col-xs-12 col-md-8">
+            <div class="texteimp jurahover">
+            Jura :
+            1'800</div>
+            <div class="texteimp neuchatelhover">
+            Neuchâtel :
+            13'964</div>
+            <div class="texteimp vaudhover">
+            Vaud :
+            59'539</div>
+            <div class="texteimp genevehover">
+            Genève :
+            36'836</div>
+            <div class="texteimp fribourghover">
+            Fribourg :
+            24'329</div>
+            <div class="texteimp valaishover">
+            Valais :
+            29'281</div>
+            <object id="carteromandie" type="image/svg+xml" data="img/romandie.svg"></object>
+        </div>
+        <div class="col-xs-12 hidden-md hidden-lg">
+            <h3>Habitants portugais par ville</h3>
+            <img src="img/romandie/camembert.svg" id="camembert" alt=""/> 
+        </div>
+   </div>
 </section>
 
 
-<section id="allemanie" class="niveau">
-
-<div class="container">
-<div class="col-xs-12 col-md-4">
-<div class="titre">
-<h1>Diaspora</h1>
-<h2>portugaise en Suisse Alémanique</h2>
-</div>
-<div class="baton">
-<div class="trait"></div>
-<div class="batonzu"></div>
-<div class="batonnw"></div>
-</div>
-
-</div>
-<div class="col-xs-12 col-md-8">
-<object id="carteallemande" type="image/svg+xml" data="img/allemande.svg"></object>
-</div>
-</div>
-
+<section id="allemanie" class="niveau allemanienext">
+    <div class="container">
+        <div class="col-xs-12 col-md-4">
+            <div class="titre">
+            <h1>Diaspora</h1>
+            <h2>portugaise en Suisse Alémanique</h2>
+            </div>
+            <div class="fond"></div>
+            <div class="infos">
+            <h3>Habitants Portugais par canton</h3>
+            <div class="baton">
+            <div class="trait"></div>
+            <div class="batonzu"></div>
+            <div class="batonnw"></div>
+            </div>
+            <div class="chiffres">
+            <ul>
+            <li class="zh">+ Zürich : 27'730</li>
+            <li class="nw">- Nidwald : 580</li>
+            </ul>
+            </div>
+            <div class="texte hidden-xs hidden-sm">En Suisse Alémanique, le canton avec la plus grande population portugaise est Zürich avec <span class="grand">27'730</span> habitants. A contrario, c’est le canton de Nidwald qui a le moins d’habitants portugais avec seulement <span class="petit">580</span> personnes.
+            </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-8">
+         <div class="textimp cantonzurichhover">Zürich: 27'730</div>
+         <div class="textimp cantonnidwaldhover">Nidwald: 580</div>
+        	<object id="carteallemande" type="image/svg+xml" data="img/allemande.svg"></object>
+        </div>
+    </div>
 </section>
 </main>
+
 <footer></footer>
 
 <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <script type="text/javascript" src="js/pagetransition.js"></script>
 <script type="text/javascript" src="js/svg-animate.js"></script>
-
+<script type="text/javascript" src="js/suisse.js"></script>
+<script type="text/javascript" src="js/romandie.js"></script>
+<script src="js/alemanie.js"></script>
 <script>
 $('#navbar a').on('click', function(){
     $('.btn-navbar').click(); //bootstrap 2.x
     $('.navbar-toggle').click() //bootstrap 3.x by Richard
 });
 </script>
+
+<script>
+$(document).ready(function () {
+  $(".icon").click(function () {
+    $(".mobilenav").fadeToggle(500);
+    $(".top-menu").toggleClass("top-animate");
+    $(".mid-menu").toggleClass("mid-animate");
+    $(".bottom-menu").toggleClass("bottom-animate");
+  });
+});
+
+$(document).ready(function () {
+  $(".mobilenav a").click(function () {
+    $( ".mobilenav" ).fadeOut(100);
+  });
+});
+</script>
+
 
 </body>
 </html>

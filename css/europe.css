@@ -4,8 +4,9 @@
 .espagne, .allemagne{fill:#E3C121;}
 	.portugal{fill:#2C945C;}
 	.suisse{fill:#E24627;}
-	.italie, .uk, .luxembourg{fill:#EAD98F;}
-	.france{fill:#F4E6AB;}
+	.uk, .luxembourg{fill:#EAD98F;}
+	.italie {fill:#F4E6AB;}
+	.france{fill:#FCF2C8;}
 	
 	.espagne:hover {
 	fill:#D6B321;
@@ -33,7 +34,7 @@
 	}
 	
 	.france:hover {
-	fill:#E8DBA6;
+	fill:#EFE5B9;
 	cursor:pointer;
 	}
 

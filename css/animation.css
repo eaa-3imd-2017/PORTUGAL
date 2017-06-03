@@ -1,0 +1,201 @@
+@charset "UTF-8";
+/* CSS Document */
+/*Calltoaction*/
+
+.cta {
+	transform: scale(0);
+	width: 35px;
+    height: 35px;
+    background-color: #646464;
+	border:2px solid #E7E7E7;
+    border-radius: 50px;
+	opacity:0.8;
+    position: absolute;
+    right: -10px;
+    top: 530px;
+    z-index: 10;
+	animation-name: calltoaction;
+    animation-duration: 3s;
+	animation-delay: 2s;
+	}
+	
+@keyframes calltoaction {
+    from {
+		top:530px;
+		transform: scale(1);
+		}
+    to {
+		top:400px;
+		transform: scale(1);
+		}}
+
+/*Batons*/
+.batonvd {
+    width: 220px;
+    height: 25px;
+	margin-bottom:10px;
+    background-color: #06602C;
+    -webkit-animation-name: grand; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+    animation-name: grand;
+    animation-duration: 3s;
+}
+
+@keyframes grand {
+    from {width:0px}
+    to {width:220px}}
+
+.batonju {
+    width: 55px;
+    height: 25px;
+    background-color: #8DC6A4;
+    -webkit-animation-name: petit; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+    animation-name: petit;
+    animation-duration: 3s;
+}
+
+@keyframes petit {
+    from {width:0px}
+    to {width:55px}}
+	
+	.batonzu {
+    width: 120px;
+    height: 25px;
+	margin-bottom:10px;
+    background-color: #06602C;
+    -webkit-animation-name: grandun; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: grandun;
+    animation-duration: 2s;
+}
+
+@keyframes grandun {
+    from {width:0px}
+    to {width:120px}}
+
+.batonnw {
+    width: 20px;
+    height: 25px;
+    background-color: #8DC6A4;
+    -webkit-animation-name: petitun; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: petitun;
+    animation-duration: 2s;
+}
+
+@keyframes petitun {
+    from {width:0px}
+    to {width:20px}}
+	
+@media (min-width: 700px) { 
+
+.batonvd {
+    width: 280px;
+    height: 40px;
+    animation-name: grand;
+    animation-duration: 3s;
+}
+
+ @keyframes grand {
+    from {width:0px}
+    to {width:280px;}}
+
+.batonju {
+    width: 70px;
+    height: 40px;
+    animation-name: petit;
+    animation-duration: 3s;
+}
+
+@keyframes petit {
+    from {width:0px}
+    to {width:70px}}
+	
+	.batonzu {
+    width: 220px;
+    height: 40px;
+    animation-name: grandun;
+    animation-duration: 3s;
+}
+
+@keyframes grandun {
+    from {width:0px}
+    to {width:220px}}
+
+.batonnw {
+    width: 40px;
+    height: 40px;
+    animation-name: petitun;
+    animation-duration: 3s;
+}
+
+@keyframes petitun {
+    from {width:0px}
+    to {width:40px}}
+
+ }
+
+@media (min-width: 992px) {
+
+.batonvd {
+    width: 320px;
+    height: 30px;
+    animation-name: grand;
+    animation-duration: 3s;
+}
+	
+	@keyframes grand {
+    from {width:0px}
+    to {width:320px}}
+
+.batonju {
+    width: 50px;
+    height: 30px;
+    animation-name: petit;
+    animation-duration: 3s;
+}
+
+@keyframes petit {
+    from {width:0px}
+    to {width:50px}}
+	
+	.batonzu {
+    width: 230px;
+    height: 30px;
+    animation-name: grandun;
+    animation-duration: 3s;
+}
+
+@keyframes grandun {
+    from {width:0px}
+    to {width:230px}}
+
+.batonnw {
+    width: 20px;
+    height: 30px;
+    animation-name: petitun;
+    animation-duration: 3s;
+}
+
+@keyframes petitun {
+    from {width:0px}
+    to {width:20px}}
+	
+#troistrois {
+    animation-name: croix;
+    animation-duration: 3s;
+}
+
+@keyframes croix {
+    from {
+		left:-500px;
+		opacity:0}
+    to {
+		left:130px;
+		opacity:1}}
+	 }
+
+
+
+	

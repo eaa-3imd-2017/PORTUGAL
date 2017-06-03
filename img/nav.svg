@@ -4,12 +4,6 @@
 <?xml-stylesheet type="text/css" href="../css/nav.css" ?>
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 83.1 743.7" style="enable-background:new 0 0 83.1 743.7;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#E5DCC6;}
-	.st1{fill:#FFFEFA;stroke:#666666;stroke-width:2;stroke-miterlimit:10;}
-	.st2{fill:none;stroke:#666666;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
-	.st3{fill:#666666;}
-</style>
 <g id="plus">
 	<g>
 		<line class="st0" x1="38.2" y1="43.9" x2="51.2" y2="43.9"/>
@@ -34,7 +28,8 @@
 	</g>
 	<line class="st2" x1="37.9" y1="709.8" x2="46.5" y2="709.8"/>
 </g>
-<circle class="st3" cx="42.3" cy="177.2" r="13.8"/>
-<circle class="st3" cx="42.3" cy="374.3" r="6.3"/>
-<circle class="st3" cx="41.8" cy="575.1" r="6.3"/>
+<circle class="st3" cx="42.3" cy="150.3" r="6.3"/>
+<circle class="st3" cx="42.3" cy="300.3" r="6.3"/>
+<circle class="st3" cx="42.3" cy="420.3" r="6.3"/>
+<circle class="st3" cx="41.8" cy="590.1" r="6.3"/>
 </svg>
